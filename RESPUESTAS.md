@@ -74,7 +74,7 @@ Android ofrece un botón o gesto de regreso del sistema; React Navigation lo int
 
 ### a) Preparación de Firebase
 
-Primero creo el proyecto en Firebase Console y registro una app web para obtener sus seis valores de configuración; luego habilito Cloud Firestore, elijo ubicación y reglas iniciales, creo la colección `contactos` y agrego tres documentos ficticios con `nombre`, `telefono` y `ciudad`. Después instalo `firebase`, guardo los valores en un `.env` ignorado y dejo un `.env.example` vacío. Por último, en un único módulo construyo `firebaseConfig`, inicializo Firebase, exporto `db = getFirestore(app)` y verifico las reglas de seguridad antes de probar lecturas y escrituras.
+Primero creo el proyecto en Firebase Console y registro una app web para obtener sus seis valores de configuración; luego habilito Cloud Firestore, elijo ubicación y reglas iniciales, creo la colección `contactos` y agrego tres documentos ficticios con `nombre`, `telefono` y `ciudad`. Después instalo `firebase`, guardo los valores en un `.env` ignorado y dejo un `.env.example` con los nombres de las variables y valores vacíos. Por último, en un único módulo construyo `firebaseConfig`, inicializo Firebase, exporto `db = getFirestore(app)` y verifico las reglas de seguridad antes de probar lecturas y escrituras.
 
 ### b) Claves del objeto de configuración
 

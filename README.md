@@ -25,7 +25,7 @@ Ejecutar `npx expo start`, abrir el código QR con Expo Go o iniciar el emulador
 
 ## Capturas manuales pendientes
 
-Después de probar la app en un dispositivo o emulador y crear un contacto real desde ella, guardar evidencia auténtica en `capturas/` con estos nombres:
+Después de probar la app en un dispositivo o emulador y crear realmente desde la app un contacto ficticio, guardar evidencia auténtica en `capturas/` con estos nombres:
 
 - `01-lista.png`: pantalla Lista con los contactos.
 - `02-detalle.png`: pantalla Detalle del contacto seleccionado.
