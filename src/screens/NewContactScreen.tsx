@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Alert, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { addDoc, collection } from 'firebase/firestore';
@@ -13,6 +13,15 @@ export function NewContactScreen({ navigation }: Props) {
   const [ciudad, setCiudad] = useState('');
   const [isSaving, setIsSaving] = useState(false);
   const isSavingRef = useRef(false);
+  const isActiveRef = useRef(true);
+
+  useEffect(() => {
+    isActiveRef.current = true;
+
+    return () => {
+      isActiveRef.current = false;
+    };
+  }, []);
 
   const handleSave = async () => {
     const trimmedNombre = nombre.trim();
@@ -37,12 +46,16 @@ export function NewContactScreen({ navigation }: Props) {
         telefono: trimmedTelefono,
         ciudad: trimmedCiudad,
       });
-      navigation.goBack();
+
+      if (isActiveRef.current) {
+        navigation.goBack();
+      }
     } catch {
-      Alert.alert('Error al guardar', 'No fue posible guardar el contacto.');
-    } finally {
-      isSavingRef.current = false;
-      setIsSaving(false);
+      if (isActiveRef.current) {
+        isSavingRef.current = false;
+        setIsSaving(false);
+        Alert.alert('Error al guardar', 'No fue posible guardar el contacto.');
+      }
     }
   };
 
