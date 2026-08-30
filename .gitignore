@@ -33,6 +33,10 @@ yarn-error.*
 # local env files
 .env
 .env*.local
+.env*
+!.env.example
+*.keystore
+service-account*.json
 
 # local diagnostic output
 tmp/

@@ -22,7 +22,7 @@ Las variables de entorno son valores que el sistema operativo entrega a los proc
 
 ### d) Expo frente a React Native CLI
 
-Expo permite iniciar y recargar rápido, y simplifica el acceso a librerías del SDK y builds en la nube; como límites, Expo Go trae módulos nativos fijos y cualquier cambio nativo exige crear y recompilar un development build. Lo elegiría para este taller, prototipos y aplicaciones que encajen con su flujo. React Native CLI da control directo de `android/`, `ios/`, dependencias y depuración nativa; a cambio exige mantener Gradle, SDK, Xcode y CocoaPods, y el build local de iOS sigue necesitando un Mac. Lo elegiría ante integraciones nativas muy específicas o si el equipo quiere administrar directamente ambos proyectos nativos.
+Expo permite iniciar y recargar rápido, y simplifica el acceso a librerías del SDK y builds en la nube; como límites, Expo Go trae módulos nativos fijos y cualquier cambio nativo exige crear y recompilar un development build. Es una buena opción para este taller, prototipos y aplicaciones que encajen con su flujo. React Native CLI da control directo de `android/`, `ios/`, dependencias y depuración nativa; a cambio exige mantener Gradle, SDK, Xcode y CocoaPods, y el build local de iOS sigue necesitando un Mac. Conviene ante integraciones nativas muy específicas o si el equipo quiere administrar directamente ambos proyectos nativos.
 
 ## Pregunta 2
 
@@ -74,7 +74,7 @@ Android ofrece un botón o gesto de regreso del sistema; React Navigation lo int
 
 ### a) Preparación de Firebase
 
-Primero creo el proyecto en Firebase Console y registro una app web para obtener sus seis valores de configuración; luego habilito Cloud Firestore, elijo ubicación y reglas iniciales, creo la colección `contactos` y agrego tres documentos ficticios con `nombre`, `telefono` y `ciudad`. Después instalo `firebase`, guardo los valores en un `.env` ignorado y dejo un `.env.example` con los nombres de las variables y valores vacíos. Por último, en un único módulo construyo `firebaseConfig`, inicializo Firebase, exporto `db = getFirestore(app)` y verifico las reglas de seguridad antes de probar lecturas y escrituras.
+Creo el proyecto en Firebase Console y registro una app web para obtener sus seis valores de configuración. Habilito Cloud Firestore, elijo ubicación y reglas iniciales, creo la colección `contactos` y agrego tres documentos ficticios con `nombre`, `telefono` y `ciudad`. Instalo `firebase`, guardo los valores en un `.env` ignorado y dejo un `.env.example` con los nombres de las variables y valores vacíos. En un único módulo construyo `firebaseConfig`, inicializo Firebase, exporto `db = getFirestore(app)` y verifico las reglas de seguridad antes de probar lecturas y escrituras.
 
 ### b) Claves del objeto de configuración
 

@@ -23,13 +23,13 @@ Las variables `EXPO_PUBLIC_` quedan visibles en el bundle del cliente; el archiv
 
 Ejecutar `npx expo start`, abrir el código QR con Expo Go o iniciar el emulador desde las opciones de Expo. La conexión real depende de completar el `.env` y de configurar Firestore; este repositorio no incluye credenciales.
 
-## Capturas manuales pendientes
+## Capturas
 
-Después de probar la app en un dispositivo o emulador y crear realmente desde la app un contacto ficticio, guardar evidencia auténtica en `capturas/` con estos nombres:
+Durante la prueba de la app en un dispositivo o emulador, el estudiante debe crear desde la app un contacto ficticio y tomar las siguientes capturas en `capturas/`:
 
 - `01-lista.png`: pantalla Lista con los contactos.
 - `02-detalle.png`: pantalla Detalle del contacto seleccionado.
 - `03-nuevo.png`: pantalla Nuevo con el formulario.
 - `04-firestore-contacto.png`: Firebase Console mostrando el contacto creado desde el dispositivo.
 
-Las imágenes, la publicación del repositorio y la entrega en Virtual TdeA requieren verificación manual; no se incluyen capturas simuladas.
+Las imágenes, la publicación del repositorio y la entrega en Virtual TdeA requieren verificación manual.

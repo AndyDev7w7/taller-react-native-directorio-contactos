@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-scaffold",
-    "slug": "expo-scaffold",
+    "name": "Directorio de Contactos",
+    "slug": "directorio-contactos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
