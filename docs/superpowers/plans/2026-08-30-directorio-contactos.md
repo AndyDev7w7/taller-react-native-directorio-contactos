@@ -117,6 +117,7 @@ git commit -m "chore: create Expo project"
 
 **Files:**
 - Create: `src/types.ts`
+- Create: `src/data/temporaryContacts.ts` (Task 2 only; delete in Task 3)
 - Create: `src/screens/ContactListScreen.tsx`
 - Create: `src/screens/ContactDetailScreen.tsx`
 - Create: `src/screens/NewContactScreen.tsx`
@@ -201,6 +202,7 @@ git commit -m "feat: add contact navigation"
 - Modify: `src/screens/ContactListScreen.tsx`
 - Modify: `src/screens/ContactDetailScreen.tsx`
 - Modify: `src/screens/NewContactScreen.tsx`
+- Delete: `src/data/temporaryContacts.ts`
 
 **Interfaces:**
 - Produces: named export `db`.
