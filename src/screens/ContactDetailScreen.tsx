@@ -78,7 +78,7 @@ export function ContactDetailScreen({ navigation, route }: Props) {
   if (!contact) {
     return (
       <View style={styles.container}>
-        <Text>No se encontró el contacto.</Text>
+        <Text>No se encontro el contacto.</Text>
       </View>
     );
   }
@@ -87,7 +87,7 @@ export function ContactDetailScreen({ navigation, route }: Props) {
     <View style={styles.container}>
       <Text style={styles.label}>Nombre</Text>
       <Text style={styles.value}>{contact.nombre}</Text>
-      <Text style={styles.label}>Teléfono</Text>
+      <Text style={styles.label}>Telefono</Text>
       <Text style={styles.value}>{contact.telefono}</Text>
       <Text style={styles.label}>Ciudad</Text>
       <Text style={styles.value}>{contact.ciudad}</Text>

@@ -29,7 +29,7 @@ export function NewContactScreen({ navigation }: Props) {
     const trimmedCiudad = ciudad.trim();
 
     if (!trimmedNombre || !trimmedTelefono || !trimmedCiudad) {
-      Alert.alert('Campos incompletos', 'Completa nombre, teléfono y ciudad.');
+      Alert.alert('Campos incompletos', 'Completa nombre, telefono y ciudad.');
       return;
     }
 
@@ -62,7 +62,7 @@ export function NewContactScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
       <TextInput value={nombre} onChangeText={setNombre} placeholder="Nombre" style={styles.input} />
-      <TextInput value={telefono} onChangeText={setTelefono} placeholder="Teléfono" keyboardType="phone-pad" style={styles.input} />
+      <TextInput value={telefono} onChangeText={setTelefono} placeholder="Telefono" keyboardType="phone-pad" style={styles.input} />
       <TextInput value={ciudad} onChangeText={setCiudad} placeholder="Ciudad" style={styles.input} />
       <Pressable
         accessibilityRole="button"
