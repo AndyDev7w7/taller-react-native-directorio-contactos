@@ -2,7 +2,6 @@
 
 App academica hecha con Expo, React Native, TypeScript, React Navigation y Cloud Firestore.
 
-- Autor: Juan Andres Taborda Rodriguez
 - Sistema operativo de desarrollo: Windows
 
 ## Requisitos
